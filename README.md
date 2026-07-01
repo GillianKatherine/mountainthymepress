@@ -1,2 +1,3 @@
-# mountainthymepress
-The home of Hamish and the Wild Haggis 
+# Mountainthyme Press
+
+The home of Hamish and the Wild Haggis.
