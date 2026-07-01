@@ -1,68 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mountainthyme Press</title>
+  <meta name="description" content="Mountainthyme Press — stories from the hills for curious hearts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sky"></div>
-  <main class="storybook" aria-live="polite">
-    <section class="page cover active" data-page="0">
-      <div class="badge">Mountainthyme Press</div>
-      <div class="illustration hills" aria-hidden="true">
-        <span class="sun"></span><span class="hill h1"></span><span class="hill h2"></span><span class="path"></span>
+  <a class="skip-link" href="#beginning">Skip to content</a>
+
+  <header class="topbar" aria-label="Site header">
+    <a class="brand" href="#home" aria-label="Mountainthyme Press home">
+      <span>Mountainthyme</span><span>Press</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#beginning">The Beginning</a>
+      <a href="#story">Our Story</a>
+      <a href="#hamish">Meet Hamish</a>
+      <a href="#adventures">Adventures</a>
+      <a href="#curiosity">Curiosity Corner</a>
+      <a href="#letters">Letters</a>
+    </nav>
+    <button class="menu-button" aria-expanded="false" aria-controls="menuPanel">☰</button>
+  </header>
+
+  <aside id="menuPanel" class="menu-panel" aria-label="Chapter menu">
+    <button class="close-menu" aria-label="Close menu">×</button>
+    <h2>Chapters</h2>
+    <a href="#beginning"><span>🏡</span><strong>The Beginning</strong><small>Welcome to our world</small></a>
+    <a href="#story"><span>🌿</span><strong>Our Story</strong><small>How it all began</small></a>
+    <a href="#hamish"><span>🐑</span><strong>Meet Hamish</strong><small>A very curious sheep</small></a>
+    <a href="#adventures"><span>⛰️</span><strong>Adventures</strong><small>Stories from the hills</small></a>
+    <a href="#curiosity"><span>🔎</span><strong>Curiosity Corner</strong><small>Activities & little wonders</small></a>
+    <a href="#letters"><span>✉️</span><strong>Letters from Hamish</strong><small>News, notes & stories</small></a>
+  </aside>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <div class="book-cover">
+          <img src="assets/hamish-cover.png" alt="" />
+        </div>
       </div>
-      <h1>Mountainthyme Press</h1>
-      <p class="tagline">Every great adventure begins with curiosity.</p>
-      <button class="turn next">Open the Book</button>
+      <div class="hero-copy">
+        <p class="kicker">Stories from the hills for curious hearts</p>
+        <h1 id="hero-title">Every great adventure begins with <span>curiosity.</span></h1>
+        <p class="intro">Welcome to Mountainthyme Press, a little publishing house where stories wander through misty glens, wildflowers, friendship, kindness and the magic found in everyday adventure.</p>
+        <a class="button primary" href="#beginning">Open the Book</a>
+      </div>
+      <div class="floating-note">Stay for a while.<br>There are stories waiting to be found.</div>
     </section>
 
-    <section class="page" data-page="1">
-      <p class="page-number">Page One</p>
-      <h2>Welcome, wanderer</h2>
-      <p>Mountainthyme Press is a small independent children’s press inspired by wild places, kind hearts, and the little moments that make children stop, wonder, and ask, “What’s over there?”</p>
-      <p>Our stories are made for curious children, tired grown-ups, and anyone who still believes adventure can begin in the grass outside the front door.</p>
-      <button class="turn next">Turn the Page</button>
+    <section id="beginning" class="chapter chapter-wide">
+      <div class="chapter-text">
+        <p class="chapter-number">01</p>
+        <h2>The Beginning</h2>
+        <p>Mountainthyme Press is the doorway into the world of Hamish and the Wild Haggis — a place for children, grown-ups, and anyone who needs reminding that curiosity still lives in the quiet corners.</p>
+        <a class="button" href="#story">Step Inside</a>
+      </div>
+      <div class="illustration-card cottage"></div>
     </section>
 
-    <section class="page" data-page="2">
-      <p class="page-number">Page Two</p>
-      <h2>The Founder</h2>
-      <p>Mountainthyme Press began with a longing to slow down, be curious again, and create something that helps children feel the quiet magic of nature, friendship, kindness, and adventure.</p>
-      <p>It is rooted in the belief that children need space to explore, imagine, lead, laugh, and discover the world with muddy shoes and open hearts.</p>
-      <button class="turn next">Turn the Page</button>
+    <section class="card-grid" aria-label="Website chapters">
+      <article id="story" class="story-card">
+        <div class="mini-illustration hills"></div>
+        <h2>Our Story</h2>
+        <p>Born from a love of wild places, curious hearts, and the magic found in ordinary days.</p>
+        <a href="#hamish">Read more →</a>
+      </article>
+
+      <article id="hamish" class="story-card feature">
+        <div class="mini-illustration sheep"></div>
+        <h2>Meet Hamish</h2>
+        <p>A Highland sheep with a big imagination, an even bigger heart, and a habit of finding adventure where others see only hills.</p>
+        <a href="#adventures">Say hello →</a>
+      </article>
+
+      <article id="adventures" class="story-card dark-card">
+        <div class="mini-illustration castle"></div>
+        <h2>Adventures</h2>
+        <p>Stories from the loch, the glen, the castle path and beyond.</p>
+        <a href="#curiosity">Explore →</a>
+      </article>
+
+      <article id="curiosity" class="story-card">
+        <div class="mini-illustration magnify"></div>
+        <h2>Curiosity Corner</h2>
+        <p>Activities, questions, tiny discoveries and creative ideas for curious minds of all ages.</p>
+        <a href="#letters">Let’s play →</a>
+      </article>
+
+      <article id="letters" class="story-card letter-card">
+        <div class="mini-illustration envelope"></div>
+        <h2>Letters from Hamish</h2>
+        <p>Coming soon: notes from the hills, behind-the-scenes updates and little bits of wonder.</p>
+        <a href="mailto:hello@mountainthymepress.com">Open the letter →</a>
+      </article>
     </section>
 
-    <section class="page" data-page="3">
-      <p class="page-number">Page Three</p>
-      <h2>Meet Hamish</h2>
-      <div class="image-placeholder">Hamish illustration goes here</div>
-      <p>Hamish is small, brave, curious, and ready to find adventure in the places others forget to look.</p>
-      <button class="turn next">Turn the Page</button>
-    </section>
-
-    <section class="page" data-page="4">
-      <p class="page-number">Page Four</p>
-      <h2>The Wild Haggis</h2>
-      <div class="image-placeholder">Wild haggis illustration goes here</div>
-      <p>Some say the wild haggis is shy. Some say it is cheeky. Some say it only appears to those who know how to look properly.</p>
-      <p>We say… keep your eyes open.</p>
-      <button class="turn next">Turn the Page</button>
-    </section>
-
-    <section class="page" data-page="5">
-      <p class="page-number">Final Page</p>
-      <h2>Join the Adventure</h2>
-      <p><strong>Hamish and the Wild Haggis</strong> is coming soon.</p>
-      <p>For now, follow along as Mountainthyme Press grows from a tiny spark into a whole storybook world.</p>
-      <a class="email" href="mailto:hello@mountainthymepress.com">hello@mountainthymepress.com</a>
-      <button class="turn restart">Back to the Cover</button>
+    <section class="founder-note" aria-labelledby="founder-title">
+      <p class="chapter-number">Founder’s Note</p>
+      <h2 id="founder-title">For the child who still wants to wander.</h2>
+      <p>Mountainthyme Press exists to nurture curiosity, kindness and adventure through timeless stories inspired by nature. This is the beginning of a world where children have room to wonder — and adults remember how.</p>
     </section>
   </main>
 
-  <button class="secret-haggis" aria-label="A tiny hidden haggis">❦</button>
+  <footer>
+    <p>© <span id="year"></span> Mountainthyme Press</p>
+    <p class="footer-line">Every great adventure begins with curiosity.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
