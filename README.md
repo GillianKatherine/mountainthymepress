@@ -1,12 +1,3 @@
-# Mountainthyme Press V3
+# Mountain Thyme Press V4
 
-A mobile-first, multi-page storybook website for Mountainthyme Press.
-
-## Upload notes
-Upload the contents of this folder to GitHub, replacing the previous site files.
-
-## Image notes
-Replace the placeholder illustration files in `assets/illustrations/` with final artwork using the same filenames where possible.
-
-## Sound notes
-The sound button is included but uses a silent placeholder audio file. Add your chosen birds/wind audio to `assets/audio/highland-ambience.mp3` when ready.
+Sprint 1 storybook shell: mobile-first, chapter navigation, ambient sound toggle, motion, and shared design language. Upload the contents of this folder to GitHub Pages.
